@@ -1,0 +1,72 @@
+<!-- Build your First Form, students can decide on the theme.
+
+Challenge 1: Use the text input to get the user name 
+Challenge 2: Use lable in appropriate places
+Challenge 3: use different form input elements
+Challenge 4: When the form is submitted, get the user's response and add the same to the body of the mail with your email id in the "to" section.
+-->
+
+<!-- your code goes below this comment -->
+<!-- Build your First Form, students can decide on the theme.
+
+Challenge 1: Use the text input to get the user name 
+Challenge 2: Use lable in appropriate places
+Challenge 3: use different form input elements
+Challenge 4: When the form is submitted, get the user's response and add the same to the body of the mail with your email id in the "to" section.
+-->
+
+<!-- your code goes below this comment -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 10px;
+        padding: 5px;
+        background-color: rgb(255, 231, 245);
+    }
+        
+        input[type="text"], input[type="password"], input[type="email"] {
+          
+            margin: 5px 0;
+          
+        }
+        select {
+          
+            margin: 5px 0;
+          
+        }
+        input[type="submit"] {
+           margin: 5px;
+        }
+</style>
+</head>
+<body>
+  <div class="registration-container">
+    <h2>New Account Registration</h2>
+    <form action="register_process.php" method="post">
+        <input type="text" name="username" placeholder="Username" required>
+        <br>
+        <input type="email" name="email" placeholder="Prithvi@lmao.com" required>
+        <br>
+        <input type="password" name="password" placeholder="Password" required>
+        <br>
+        <label for="gender">Gender:</label>
+            <input type="radio" name="gender" value="male" required> Male 
+            <input type="radio" name="gender" value="female"> Female 
+            <input type="radio" name="gender" value="other"> Other 
+        </select>
+        <br>
+        <input type="date" name="birthdate" required>
+        <br>
+        <input type="submit" value="Register">
+    </form>
+</div>
+</body>
+</html>
